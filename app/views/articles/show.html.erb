@@ -1,8 +1,24 @@
-<h1>Showing article details</h1>
+<div class="container">
+    <h1 class="text-center mt-4">Article Details</h1>
+    <div class="row justify-content-center">
+        <div class="col-10">
 
-<p><strong>Title: </strong><%= @article.title %></p>
-<p><strong>Description: </strong><%= @article.description %></p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"><%= @article.title %></h5>
+                    <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1"><%= @article.description %></p>
+                    <small>By Caroline Cagnin</small>
 
-<%= link_to "Edit", edit_article_path(@article)%> | 
-<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Confirm?" } %> |
-<%= link_to "Return to List", articles_path %>
+                    <div>
+                        <%= link_to "Edit", edit_article_path(@article)%> | 
+                        <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Confirm?" } %> |
+                        <%= link_to "Return to List", articles_path %>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
