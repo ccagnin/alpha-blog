@@ -7,7 +7,7 @@ Projeto do curso "The Complete Ruby on Rails Development Course".
 - CRUD
 - Sistema de rotas
 - Rails na prática
-- Bootstrap styling em html.erb
+- Bootstrap styling em html.erb/SCSS
 
 
 ## Stack utilizada
