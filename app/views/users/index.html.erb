@@ -1,0 +1,29 @@
+<h1 class="text-center mt-4">Alpha Bloggers</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Image</th>
+            <th scope="col">User</th>
+            <th scope="col" colspan="3">Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @users.each do |user| %>
+                <tr>
+                    <td><%= link_to avatar_for(user, size: '50x50'), user_path(user.id) %></td>
+                    <td><%= user.username %></td>
+                    <td><%= link_to 'View Profile', user_path(user.id) %></td>
+                    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+                    <td><%= pluralize(user.articles.count, "article") %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+    <p>
+    <%= link_to "Create new article", new_article_path %>
+    </p>        
+</div>
