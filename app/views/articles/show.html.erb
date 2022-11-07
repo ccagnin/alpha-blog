@@ -10,7 +10,7 @@
                     <small>3 days ago</small>
                     </div>
                     <p class="mb-1"><%= @article.description %></p>
-                    <small>By Caroline Cagnin</small>
+                    <small>By <%= @article.user.username %></small>
 
                     <div>
                         <%= link_to "Edit", edit_article_path(@article)%> | 
