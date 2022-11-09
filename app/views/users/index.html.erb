@@ -25,5 +25,9 @@
 
     <p>
     <%= link_to "Create new article", new_article_path %>
-    </p>        
+    </p>
+
+    <div class="flickr_pagination">
+        <%= will_paginate @users, :container => false %>
+    </div>        
 </div>
