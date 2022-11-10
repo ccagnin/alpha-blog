@@ -18,6 +18,7 @@
                 <ul class="dropdown-menu">
                   <%= link_to "View Profile", user_path(current_user), class: "dropdown-item"%>
                   <%= link_to "Edit profile", edit_user_path(current_user), class: "dropdown-item"%>
+                  <%= link_to "Delete profile", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" }%>
                 </ul>
               </li>
             </li> 
