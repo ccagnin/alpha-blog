@@ -14,7 +14,7 @@
 
                     <div>
                         <%= link_to "Edit", edit_article_path(@article)%> |
-                        <% if logged_in? && @article.user == current_user %> 
+                        <% if logged_in? && (@article.user == current_user || current_user.admin?) %> 
                             <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Confirm?" } %> |
                             <%= link_to "Return to List", articles_path %>
                         <% end %>
