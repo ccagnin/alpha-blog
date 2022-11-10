@@ -9,6 +9,7 @@ O foco do projeto está a construção das funcionalidades backend, frontend imp
 - Sistema de rotas
 - Rails na prática
 - Bootstrap styling em html.erb/SCSS
+- Testes unitários, funcionais e integrados
 
 
 ## Stack utilizada
