@@ -1,6 +1,7 @@
-# Alpha Blog - EM ANDAMENTO
+# Alpha Blog 
 
 Projeto do curso "The Complete Ruby on Rails Development Course". 
+O foco do projeto está a construção das funcionalidades backend, frontend implementado apenas para melhor visualização e utilização do site.
 
 ## Aprendizados
 
