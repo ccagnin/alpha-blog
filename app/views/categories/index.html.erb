@@ -5,12 +5,14 @@
         <thead>
             <tr>
             <th scope="col">Title</th>
+            <th scope="col">Articles</th>
         </thead>
 
         <tbody>
             <% @categories.each do |category| %>
                 <tr>
                     <td><%= link_to category.name, category_path(category) %></td>
+                    <td><%= pluralize(category.articles.count, "article") %></td>
                 </tr>
             <% end %>
         </tbody>
