@@ -16,9 +16,11 @@
         </tbody>
     </table>
 
-    <p>
-        <%= link_to "Create new category", new_category_path %>
-    </p>
+    <% if logged_in? && current_user.admin? %>
+        <p>
+            <%= link_to "Create new category", new_category_path %>
+        </p>
+    <% end %>
 
     <div class="flickr_pagination">
         <%= will_paginate @posts, :container => false %>
